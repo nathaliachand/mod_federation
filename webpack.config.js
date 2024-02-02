@@ -45,7 +45,10 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "remote",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        itemsdetail:
+          "itemsdetail@https://micro-fe-chi.vercel.app/remoteEntry.js",
+      },
       exposes: {
         "./Text": "./src/components/Text.tsx",
       },

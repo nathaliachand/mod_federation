@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Text } from "./components/Text";
 import "./index.scss";
+import Header from "itemsdetail/Header";
+import Footer from "itemsdetail/Footer";
 
 const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
@@ -10,6 +12,8 @@ const App = () => (
     <div>Language: TypeScript</div>
     <div>CSS: Tailwind</div>
     <Text />
+    <Header />
+    <Footer />
   </div>
 );
 const rootElement = document.getElementById("app");
