@@ -38,6 +38,7 @@ module.exports = (_, argv) => ({
           loader: "babel-loader",
         },
       },
+      { test: /\.(png|svg|jpg|jpeg|gif)$/i, type: "asset/resource" },
     ],
   },
 
@@ -51,6 +52,7 @@ module.exports = (_, argv) => ({
       },
       exposes: {
         "./Text": "./src/components/Text.tsx",
+        "./Banner": "./src/components/Banner.tsx",
       },
       shared: {
         ...deps,
@@ -61,6 +63,10 @@ module.exports = (_, argv) => ({
         "react-dom": {
           singleton: true,
           requiredVersion: deps["react-dom"],
+        },
+        jotai: {
+          singleton: true,
+          requiredVersion: deps["jotai"],
         },
       },
     }),
