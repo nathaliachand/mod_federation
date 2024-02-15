@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
-import { Text } from "./components/Text";
 import "../index.scss";
 import Header from "itemsdetail/Header";
 import Footer from "itemsdetail/Footer";

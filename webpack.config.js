@@ -51,7 +51,6 @@ module.exports = (_, argv) => ({
           "itemsdetail@https://micro-fe-chi.vercel.app/remoteEntry.js",
       },
       exposes: {
-        "./Text": "./src/components/Text.tsx",
         "./Banner": "./src/components/Banner.tsx",
       },
       shared: {
