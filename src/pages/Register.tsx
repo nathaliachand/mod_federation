@@ -57,14 +57,13 @@ const Register = () => {
         </form>
       </div>
       <div className="py-10">
-        <Button
-          color="blue"
-          className="w-24 h-12 border-1"
+        <button
+          className="py-2 px-7 text-black hover:bg-slate-100 border-2 border-gray-500 color-black rounded-md"
           type="submit"
           value="Submit"
         >
           Register
-        </Button>
+        </button>
       </div>
     </div>
   );
